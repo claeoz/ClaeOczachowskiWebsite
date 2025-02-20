@@ -1,0 +1,22 @@
+@charset "utf-8";
+strong{
+    color: yellow;
+    font-size: 1.5em;
+}
+.quote{
+    background-color: #fff085;
+    font-size: 4em;
+    margin: 40px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.card{
+    background-color: #fff085 !important;
+    padding: 10px;
+    margin: 5px;
+}
+img{
+    width: 150px;
+    margin: 5px;
+}

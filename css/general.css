@@ -1,0 +1,57 @@
+@charset "utf-8";
+body {
+    background-color: bisque !important;
+    margin: 40px !important;
+    margin-top: 120px !important;
+}
+header{
+    text-align: center;
+    background-color: orange;
+    padding: 5px;
+    margin: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    font-family: "Jersey 10", sans-serif;
+    font-size: 2em;
+}
+a{
+    color: black !important;
+    text-decoration: none !important;
+}
+p{
+    text-indent: 4em;
+}
+nav > p{
+    font-size: .8em;
+    margin: 0px;
+    margin-right: 20px;
+}
+nav{
+    background-color: orange !important;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+nav > a{
+    margin: 20px;
+    font-size: 1.5em;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.dropdown-menu {
+    background-color: orange !important;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+}
+.dropdown-menu > li{
+    background-color: orange !important;
+}
+.warning{
+    color: red;
+}
+#personalProjectsDropdown{
+    margin: 20px;
+    font-size: 1.5em;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    color: black;
+    text-decoration: none;
+    background-color: orange !important;
+}

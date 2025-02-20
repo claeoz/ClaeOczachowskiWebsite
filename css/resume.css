@@ -1,0 +1,43 @@
+@charset "utf-8";
+main{
+    background-color: White;
+    margin: 60px;
+    border-radius: 10px;
+    padding: 20px;
+}
+main > header{
+    background-color: beige;
+    box-shadow: none;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: none;
+}
+main > header > h1{
+    text-align: left;
+    text-indent: 3em;
+}
+.Table > h2{
+    margin-left: 20px;
+}
+article{
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+article > H2{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+article > P{
+    text-indent: 0px;
+    margin-top: 0px;
+}
+@media print {
+    * {
+        color: black;
+        background-color: white;
+        box-shadow: none;
+        text-shadow: none;
+    }
+}
