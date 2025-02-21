@@ -4,6 +4,7 @@ main{
     margin: 60px;
     border-radius: 10px;
     padding: 20px;
+    margin-bottom: 10px;
 }
 main > header{
     background-color: beige;
@@ -19,6 +20,9 @@ main > header > h1{
 }
 .Table > h2{
     margin-left: 20px;
+}
+.downloadLink{
+    text-align: center;
 }
 article{
     margin-left: 40px;

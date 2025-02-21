@@ -1,0 +1,74 @@
+@charset "utf";
+body{
+    padding: 70px;
+    padding-top: 20px;
+}
+.lastColumn{
+    width: 70%;
+}
+.widerTable{
+    width: 100%;
+}
+.YearRange{
+    width: 3em;
+    text-align: center;
+}
+.skills{
+    vertical-align: top;
+}
+
+#Project{
+    list-style: none;
+    padding: 0;
+}
+#Contact{
+    padding: 0;
+}
+#Contact li{
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin: 3px;
+    padding: 2px;
+}
+#Project li{
+    margin: 1px;
+    padding: 5px;
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+ul{
+    list-style: none;
+}
+h1{
+    text-align: center;
+}
+a{
+    color: black;
+}
+td{
+    padding: .5em;
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+tr{
+    justify-content: space-between;
+    
+}
+p{
+    text-indent: 4em;
+}
+th{
+    text-align: left;
+}
+h2{
+    margin-top: 40px;
+}
+@media print{
+    .page {break-before: always;}
+}
