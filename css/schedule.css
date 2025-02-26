@@ -7,15 +7,15 @@
     border-radius: 15px;
     border-style: double;
     border-width: 10px;
-    border-color: beige;
+    border-color: var(--background-color);
     padding: 15px;
     margin: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 15px var(--shadow-color);
 }
 
 .btn {
-    background-color: beige !important;
-    color: black !important;
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
 }
 
 .queue {
@@ -26,10 +26,10 @@
 }
 
 #submissionMessage {
-    background-color: #fff085 !important;
+    background-color: var(--secondary-color) !important;
 }
 .error {
-    color: red;
+    color: var(--warning-color);
     font-size: 0.9em;
     margin-top: 5px;
 }

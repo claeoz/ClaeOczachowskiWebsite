@@ -1,6 +1,6 @@
 @charset "utf-8";
 strong{
-    color: yellow;
+    color: var(--border-color);
     font-size: 1.7em;
     text-shadow:  
         -1px -1px 0 white,  
@@ -13,15 +13,15 @@ strong{
          0px  1px 0 white !important;
 }
 .quote{
-    background-color: #fff085;
+    background-color: var(--secondary-color) !important;
     font-size: 4em;
     margin: 40px;
     padding: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 15px var(--shadow-color);
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 .card{
-    background-color: #fff085 !important;
+    background-color: var(--secondary-color) !important;
     padding: 10px;
     margin: 5px;
 }

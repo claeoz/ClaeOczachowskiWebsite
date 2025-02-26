@@ -1,7 +1,7 @@
 @charset "utf-8";
 h2{
-    background-color: orange;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    background-color: var(--primary-color);
+    box-shadow: 5px 5px 15px var(--shadow-color);
     text-align: center;
 }
 .gallery {
@@ -13,9 +13,9 @@ h2{
     border-radius: 15px;
     border-style: double;
     border-width: 10px;
-    border-color: yellow;
+    border-color: var(--border-color);
     margin: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 15px var(--shadow-color);
 }
 .gallery > div > img{
     width: 100%;

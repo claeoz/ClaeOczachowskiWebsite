@@ -7,7 +7,7 @@ main{
     margin-bottom: 10px;
 }
 main > header{
-    background-color: beige;
+    background-color: var(--secondary-color);
     box-shadow: none;
     border-radius: 10px;
     font-family: 'Times New Roman', Times, serif;

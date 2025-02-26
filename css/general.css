@@ -1,12 +1,21 @@
 @charset "utf-8";
+:root{
+    --background-color: #ffe4c4;
+    --primary-color: orange;
+    --text-color: black;
+    --warning-color: red;
+    --border-color: yellow;
+    --shadow-color: rgba(0, 0, 0, 0.8);
+    --secondary-color: #fff085;
+}
 body {
-    background-color: bisque !important;
+    background-color: var(--background-color) !important;
     margin: 40px !important;
     margin-top: 200px !important;
 }
 header{
     text-align: center;
-    background-color: orange;
+    background-color: var(--primary-color);
     padding: 5px;
     margin: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
@@ -15,7 +24,7 @@ header{
     font-size: 2em;
 }
 a{
-    color: black !important;
+    color: var(--text-color) !important;
     text-decoration: none !important;
 }
 p{
@@ -27,7 +36,7 @@ nav > p{
     margin-right: 20px;
 }
 nav{
-    background-color: orange !important;
+    background-color: var(--primary-color) !important;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 nav > a{
@@ -36,22 +45,22 @@ nav > a{
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 .dropdown-menu {
-    background-color: orange !important;
+    background-color: var(--primary-color) !important;
     bottom: 100%;
     left: 0;
     right: 0;
 }
 .dropdown-menu > li{
-    background-color: orange !important;
+    background-color: var(--primary-color) !important;
 }
 .warning{
-    color: red;
+    color: var(--warning-color);
 }
 #personalProjectsDropdown{
     margin: 20px;
     font-size: 1.5em;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
-    background-color: orange !important;
+    background-color: var(--primary-color) !important;
 }
