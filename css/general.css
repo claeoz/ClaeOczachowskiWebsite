@@ -18,7 +18,7 @@ header{
     background-color: var(--primary-color);
     padding: 5px;
     margin: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 15px var(--shadow-color);
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     font-family: "Jersey 10", sans-serif;
     font-size: 2em;
