@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+:root{
+    --background-color: #ffe4c4;
+    --primary-color: orange;
+    --text-color: black;
+    --warning-color: red;
+    --border-color: yellow;
+    --shadow-color: rgba(0, 0, 0, 0.8);
+    --secondary-color: #fff085;
+}
+body {
+    background-color: var(--background-color) !important;
+    margin: 40px !important;
+    margin-top: 200px !important;
+}
+header{
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 5px;
+    margin: 20px;
+    box-shadow: 5px 5px 15px var(--shadow-color);
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    font-family: "Jersey 10", sans-serif;
+    font-size: 2em;
+}
+a{
+    color: var(--text-color) !important;
+    text-decoration: none !important;
+}
+p{
+    text-indent: 4em;
+}
+nav > p{
+    font-size: .8em;
+    margin: 0px;
+    margin-right: 20px;
+}
+nav{
+    background-color: var(--primary-color) !important;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+nav > a{
+    margin: 20px;
+    font-size: 1.5em;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.dropdown-menu {
+    background-color: var(--primary-color) !important;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+}
+.dropdown-menu > li{
+    background-color: var(--primary-color) !important;
+}
+.warning{
+    color: var(--warning-color);
+}
+#personalProjectsDropdown{
+    margin: 20px;
+    font-size: 1.5em;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: var(--primary-color) !important;
+}
