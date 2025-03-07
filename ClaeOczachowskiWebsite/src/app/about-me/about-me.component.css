@@ -1,0 +1,31 @@
+@charset "utf-8";
+strong{
+    color: var(--border-color);
+    font-size: 1.7em;
+    text-shadow:  
+        -1px -1px 0 white,  
+         1px -1px 0 white,  
+        -1px  1px 0 white,  
+         1px  1px 0 white,  
+        -1px  0px 0 white,  
+         1px  0px 0 white,  
+         0px -1px 0 white,  
+         0px  1px 0 white !important;
+}
+.quote{
+    background-color: var(--secondary-color) !important;
+    font-size: 4em;
+    margin: 40px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px var(--shadow-color);
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.card{
+    background-color: var(--secondary-color) !important;
+    padding: 10px;
+    margin: 5px;
+}
+img{
+    width: 150px;
+    margin: 5px;
+}

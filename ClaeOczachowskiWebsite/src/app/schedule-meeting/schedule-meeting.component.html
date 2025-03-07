@@ -1,1 +1,134 @@
-<p>schedule-meeting works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clae Oczachowski Schedule</title>
+    <link href="../css/general.css" rel="stylesheet">
+    <link href="../css/schedule.css" rel="stylesheet">
+    <link rel="icon" href="../img/claysoftlogo1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="../js/schedule.js" defer></script>
+    <script src="../js/general.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Schedule An appointment today</h1>
+    </header>
+    <p>
+        you're more than welcome to schedule a consultation, a commission for a website or 3d model, 
+        ,or a interview just fill out the form bellow and I'll get to your submission as soon as I can
+    </p>
+    <h1 class="warning">
+        CURRENTLY NOT OPERATIONAL
+    </h1>
+    <form class="request" id="request">
+        <div class="mb-3 d-flex">
+            <label for="firstName" class="form-label">First Name</label>
+            <input id="firstName" name="firstName" class="form-control" required>
+        </div>
+    
+        <div class="mb-3 d-flex">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input id="lastName" name="lastName" class="form-control" required>
+        </div>
+    
+        <div class="mb-3 d-flex">
+            <label class="form-label">Preferred Method of Contact</label>
+            <div class="form-check">
+                <input type="radio" name="preferredContact" id="EmailContact" class="form-check-input">
+                <label for="EmailContact" class="form-check-label">Email</label>
+            </div>
+            <div class="form-check d-flex">
+                <input type="radio" name="preferredContact" id="PhoneContact" class="form-check-input">
+                <label for="PhoneContact" class="form-check-label">Phone</label>
+            </div>
+        </div>
+    
+        <div class="mb-3 d-flex">
+            <label for="PhoneNumber" class="form-label">Phone</label>
+            <input id="PhoneNumber" type="tel" name="phoneNumber" class="form-control" required>
+        </div>
+    
+        <div class="mb-3 d-flex">
+            <label for="Email" class="form-label">Email</label>
+            <input id="Email" type="email" name="email" class="form-control" required>
+        </div>
+    
+        <div class="mb-3 d-flex">
+            <label for="type" class="form-label">Type of Appointment</label>
+            <select id="type" name="type" class="form-select" required>
+                <option>NA</option>
+                <option>Consultation</option>
+                <option>Website Commission</option>
+                <option>3D Model Commission</option>
+                <option>Collaboration Project</option>
+                <option>Job Interview</option>
+            </select>
+        </div>
+    
+        <div class="mb-3 d-flex">
+            <label for="details" class="form-label">Details on Request</label>
+            <input id="details" type="text" name="details" class="form-control" required>
+        </div>
+        <div class="mb-3 d-flex">
+            <button type="submit" class="btn btn-primary" id="submit" data-bs-toggle="modal" data-bs-target="#submissionMessage">Submit</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#express">Express Submission</button>
+            <p id="queue" class="queue" data-bs-toggle="modal" data-bs-target="#express"></p>
+        </div>
+    </form>
+    <div class="modal fade" id="submissionMessage" tabindex="-1" aria-labelledby="submissionMessageLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="submissionMessageLabel">Submission Received</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thank you for your submission! We'll get back to you soon.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="express" tabindex="-1" aria-labelledby="ExpressLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ExpressLabel">Submission Deleted</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Thank you for your submission, we shall reach out at our soonest convenience.
+                    </p>
+                    <div class="progress">
+                        <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        
+                        </div>
+                    </div>
+                    <p class="disclaimer">
+                        Removing "C:\msys64"
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.request {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    border-radius: 15px;
+    border-style: double;
+    border-width: 10px;
+    border-color: var(--background-color);
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 5px 5px 15px var(--shadow-color);
+}
+
+.btn {
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+}
+
+.queue {
+    background-color: white;
+}
+.disclaimer {
+    font-size: 0.5em !important;
+}
+
+#submissionMessage {
+    background-color: var(--secondary-color) !important;
+}
+.error {
+    color: var(--warning-color);
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+input, select {
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .request {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .request {
+        grid-template-columns: 1fr;
+    }
+}
