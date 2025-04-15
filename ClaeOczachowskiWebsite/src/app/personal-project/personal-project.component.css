@@ -6,8 +6,8 @@ h2{
 }
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Makes the gallery responsive */
-    gap: 10px;
+    grid-template-columns: repeat(3, minmax(900px, 1fr)); /* Makes the gallery responsive */
+    width: 100%;
 }
 .gallery > div{
     border-radius: 15px;
@@ -19,6 +19,8 @@ h2{
 }
 .gallery > div > img{
     object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 .gallery > div > p{
     text-indent: 0px;
