@@ -2,7 +2,7 @@ import { Component, input, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-personal-media-entry',
+  selector: 'personal-media-entry',
   imports: [CommonModule],
   templateUrl: './personal-media-entry.component.html',
   styleUrl: './personal-media-entry.component.css'
