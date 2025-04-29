@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "/": {},
+    "/about-me": {},
+    "/downward-spiral": {},
+    "/home": {},
+    "/myst": {},
+    "/personal-project": {},
+    "/resume": {},
+    "/schedule": {}
+  }
+}
