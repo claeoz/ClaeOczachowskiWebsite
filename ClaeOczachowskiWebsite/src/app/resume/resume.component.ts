@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { EducationEntryComponent } from '../education-entry/education-entry.component';
+import { ResumeEntryComponent } from "../resume-entry/resume-entry.component";
 @Component({
   selector: 'app-resume',
-  imports: [EducationEntryComponent],
+  imports: [ResumeEntryComponent],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
 })
