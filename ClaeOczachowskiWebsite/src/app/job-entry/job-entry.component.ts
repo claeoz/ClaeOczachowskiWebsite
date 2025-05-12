@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'job-entry',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './job-entry.component.css'
 })
 export class JobEntryComponent {
-
+  @Input() start: string = ''
+  @Input() end: string = ''
+  @Input() title: string = ''
+  @Input() place: string = ''
+  @Input() city: string = ''
+  @Input() state: string = ''
+  @Input() details: string = ''
 }
