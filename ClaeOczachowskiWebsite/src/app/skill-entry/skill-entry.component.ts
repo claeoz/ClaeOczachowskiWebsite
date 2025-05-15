@@ -2,10 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-skill-entry',
+  selector: 'skill-entry',
   imports: [CommonModule],
   templateUrl: './skill-entry.component.html',
-  styleUrl: './skill-entry.component.css'
+  styleUrls: ['./skill-entry.component.css']
 })
 export class SkillEntryComponent {
   @Input() name: string = "";

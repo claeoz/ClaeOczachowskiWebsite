@@ -1,9 +1,10 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { SkillEntryComponent } from '../skill-entry/skill-entry.component';
 
 @Component({
   selector: 'app-about-me',
-  imports: [],
+  imports: [SkillEntryComponent],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.css'
 })
