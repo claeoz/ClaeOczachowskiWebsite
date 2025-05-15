@@ -1,19 +1,23 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Skill } from '../models/skill';
+import { SkillEntryComponent } from '../skill-entry/skill-entry.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-proficiency-card',
-  imports: [],
+  selector: 'proficiency-card',
+  imports: [ SkillEntryComponent, CommonModule ],
   templateUrl: './proficiency-card.component.html',
   styleUrl: './proficiency-card.component.css'
 })
 export class ProficiencyCardComponent implements OnInit {
   //fields
   @Input() isLanguage: boolean = false;
+  title: string = "";
   skills: Skill[] = []
   //methods
   ngOnInit(): void {
     if (this.isLanguage) {
+      this.title = "Coding and Scripting Languages"
       this.skills.push(
         {name: "C", proficiency: 2},
         {name: "C#", proficiency: 5},
@@ -33,6 +37,7 @@ export class ProficiencyCardComponent implements OnInit {
       );
     }
     else{
+      this.title = "Other"
       this.skills.push(
         {name: "Godot", proficiency: 4},
         {name: "Unity", proficiency: 2},
