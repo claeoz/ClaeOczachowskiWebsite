@@ -86,56 +86,8 @@
                 Skills
             </h2>
             <ol>
-                <li>
-                    C#
-                </li>
-                <li>
-                    C
-                </li>
-                <li>
-                    HTML
-                </li>
-                <li>
-                    CSS
-                </li>
-                <li>
-                    JavaScript
-                </li>
-                <li>
-                    typeScript
-                </li>
-                <li>
-                    Bootstrap
-                </li>
-                <li>
-                    JQuery
-                </li>
-                <li>
-                    Angular
-                </li>
-                <li>
-                    GDScript
-                </li>
-                <li>
-                    Bash
-                </li>
-                <li>
-                    Power Shell
-                </li>
-                <li>
-                    Git
-                </li>
-                <li>
-                    Github
-                </li>
-                <li>
-                    Godot
-                </li>
-                <li>
-                    Blendr
-                </li>
-                <li>
-                    Agile
+                <li *ngFor="let name of skills">
+                    {{name}}
                 </li>
             </ol>
         </section>
