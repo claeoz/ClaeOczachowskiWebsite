@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-achievement-card',
+  selector: 'achievement-card',
   imports: [],
   templateUrl: './achievement-card.component.html',
   styleUrl: './achievement-card.component.css'

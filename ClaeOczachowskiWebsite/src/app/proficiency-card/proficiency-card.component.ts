@@ -24,6 +24,7 @@ export class ProficiencyCardComponent implements OnInit {
         {name: "Python", proficiency: 3},
         {name: "HTML", proficiency: 5},
         {name: "CSS", proficiency: 4},
+        {name: "Rust", proficiency: 2},
         {name: "JavaScript", proficiency: 2},
         {name: "TypeScript", proficiency: 4},
         {name: "GDScript", proficiency: 1},

@@ -1,9 +1,10 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { ProficiencyCardComponent } from '../proficiency-card/proficiency-card.component';
+import { AchievementCardComponent } from '../achievement-card/achievement-card.component';
 @Component({
   selector: 'app-about-me',
-  imports: [ProficiencyCardComponent],
+  imports: [ProficiencyCardComponent, AchievementCardComponent],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.css'
 })
